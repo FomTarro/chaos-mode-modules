@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "oss modules for competitve microgames",
   "scripts": {
-    "test": "jest --coverage --collectCoverageFrom=**/*.game.{js,jsx} --passWithNoTests",
+    "test": "jest --coverage --collectCoverageFrom=games/**/*{game,utils}.{js,jsx} --passWithNoTests",
     "test-leaks": "jest --runInBand --detectOpenHandles",
     "check-push": "npm run test"
   },
