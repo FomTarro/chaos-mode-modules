@@ -14,11 +14,11 @@ Additional microgames can be contributed to **CHAOS MODE** relatively easily! If
  
 Each microgame is composed of two halves: the server-side code, and the client side code. We'll need both halves to make the microgame work. In addition, these halves must adhere to a simple API interface in order to plug in nicely with the game infrastructure.
  
-An example of all the necessary components can be found in `/games/exclude-example`. It's worth mentioning that the `exclude-*` prefix on the microgame's folder is what prevents it from being loaded in to the actual game itself.
+An example of all the necessary components can be found in [`/games/exclude-example`](https://github.com/FomTarro/chaos-mode-modules/tree/master/games/exclude-example). It's worth mentioning that the `exclude-*` prefix on the microgame's folder is what prevents it from being loaded in to the actual game itself.
  
 This example microgame has the simple objective of requiring the player to mash a button a certain number of times, before the timer expires.
  
-### Server-Side
+#### Server-Side
  
 The server-side code must be located in a file named `*.game.js`. The file should contain the definition for a class called `Game` and must export a that class with `module.exports.Game = Game`. It also must have the following function signatures:
  
