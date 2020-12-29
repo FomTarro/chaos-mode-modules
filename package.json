@@ -1,0 +1,37 @@
+{
+  "name": "chaos-mode-modules",
+  "version": "1.0.0",
+  "description": "oss modules for competitve microgames",
+  "scripts": {
+    "test": "jest --coverage --collectCoverageFrom=**/*.game.{js,jsx} --passWithNoTests",
+    "test-leaks": "jest --runInBand --detectOpenHandles",
+    "check-push": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FomTarro/chaos-mode-modules.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FomTarro/chaos-mode-modules/issues"
+  },
+  "homepage": "https://github.com/FomTarro/chaos-mode-modules#readme",
+  "devDependencies": {
+    "jest": "25.2.1",
+    "nock": "12.0.3",
+    "supertest": "4.0.2",
+    "sass": "1.26.5",
+    "husky": "^3.1.0"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run check-push",
+      "post-merge": "npm install"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
