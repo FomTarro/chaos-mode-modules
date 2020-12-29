@@ -1,0 +1,29 @@
+body{
+    color: red;
+}
+
+.center-align {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
+    transition: transform ease-in 0.1s;
+    max-height: 200px;
+    width: auto;
+}
+
+.button:active{
+    transform: scale(0.9);
+}
