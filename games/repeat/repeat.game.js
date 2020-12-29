@@ -19,6 +19,10 @@ class Game{
         return './repeat.html';
     }
 
+    get credits(){
+        return 'sunshine committee'
+    }
+
     check(inputs){
         this.log.log(`checking: ${inputs}`);
         if(inputs.word){

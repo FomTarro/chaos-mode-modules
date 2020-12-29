@@ -29,6 +29,8 @@ The server-side code must be located in a file named `*.game.js`. The file shoul
 * `get setup()`: An accessor that can return whatever data in whatever structure you want, which will get fed to the client-side code at the time the player is served the microgame. In this example, we simply send the number of times that the player must push the button.
  
 * `get path()`: An accessor that points to the `*.html` file of the front-end for the microgame. Must be a relative path.
+
+* `get credits()`: An accessor to return the name or names of contributors for the module, to be listen on the game's credits page. Technically, this accessor is optional, but it is encouraged that you recieve credit for your contribution!
  
 * `function check(inputs)`: A function that consumers user input, which can be in whatever structure you want, as sent from the client-side code, and checks if the objective has been met. This function must return a boolean: `true` if the objective has been met, `false` otherwise. 
  

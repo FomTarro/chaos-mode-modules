@@ -12,6 +12,10 @@ class Game{
         return './tap.html';
     }
 
+    get credits(){
+        return 'sunshine committee'
+    }
+
     check(inputs){
         this.log.log(`checking: ${inputs}`);
         return (inputs.count <= 0)
