@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "oss modules for competitve microgames",
   "scripts": {
+    "start": "cd test-server && node test.server.js",
     "test": "jest --coverage --collectCoverageFrom=games/**/*{game,utils}.{js,jsx} --passWithNoTests",
     "test-leaks": "jest --runInBand --detectOpenHandles",
     "check-push": "npm run test"
@@ -22,7 +23,9 @@
     "nock": "12.0.3",
     "supertest": "4.0.2",
     "sass": "1.26.5",
-    "husky": "^3.1.0"
+    "husky": "^3.1.0",
+    "express": "^4.17.1",
+    "jsdom": "16.4.0"
   },
   "dependencies": {},
   "husky": {
